@@ -1,0 +1,23 @@
+{
+  "name": "angular_lesson",
+  "version": "0.0.0",
+  "homepage": "https://github.com/YannDuv/angular_lesson",
+  "authors": [
+    "DUVAL Yann <yann.duval@altran.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1"
+  }
+}

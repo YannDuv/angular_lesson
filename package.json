@@ -1,0 +1,22 @@
+{
+  "name": "angular_lesson",
+  "version": "1.0.0",
+  "description": "Quick introduction to some AngularJs awesomeness",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YannDuv/angular_lesson.git"
+  },
+  "author": "Yann Duval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YannDuv/angular_lesson/issues"
+  },
+  "homepage": "https://github.com/YannDuv/angular_lesson",
+  "devDependencies": {
+    "bower": "^1.4.1"
+  }
+}
