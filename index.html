@@ -12,7 +12,38 @@
   <div ng-controller="myController">
     <h1><img src="http://www.grafikart.fr/uploads/formations/6.png"> AngularJs : Demo</h1>
 
+    <form ng-submit="create()">
+      <h2>Create a new TODO</h2>
+      <div>
+        <label for="title">Title</label>
+        <input type="text" name="title" ng-model="myNewTodo.title"></input>
+      </div>
+
+      <div>
+        <label for="comment">Comment</label>
+        <textarea name="comment" ng-model="myNewTodo.comment" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <label for="deadline">Deadline</label>
+        <input type="date" name="deadline" ng-model="myNewTodo.deadline"></input>
+      </div>
+
+      <button type="submit">Create !</button>
+    </form>
+
+    <ul>
+      <li ng-repeat="todo in todos">
+        <h2>{{todo.title}}</h2>
+        <span class="deadline">{{todo.deadline}}</span>
+        <br>
+        <span class="comment">{{todo.comment}}</span>
+        <button ng-click="delete(todo.id)">Remove</button>
+      </li>
+    </ul>
+
   </div>
+
 </body>
 <!-- include js after body because it is not needed for first rendering -->
 <script type="text/javascript" src="dist/angular/angular.min.js"></script>
